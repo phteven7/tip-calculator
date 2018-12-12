@@ -1,0 +1,20 @@
+
+body {
+    text-align: center;
+}
+
+h1 {
+    color: white;;
+    text-align: center;
+}
+
+.container {
+    background: rgb(245,239,255);
+background: radial-gradient(circle, rgba(245,239,255,1) 0%, rgba(167,115,255,1) 100%, rgba(98,0,255,1) 100%);
+    margin: auto;
+    margin-top: 5%;
+    width: 17%;
+    border: 2px solid purple;
+    padding: 20px;
+    border-spacing: 10px;
+}

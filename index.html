@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tip Me Bitches</title>
+    <link rel="stylesheet" href="TipCalc.css">
+    <script src="TipCalc.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Tip Me Bitches</h1>
+        <label for="#bill">How much was your bill?</label>
+        <br>
+        <br>
+        $<input id="bill" type="text">
+        <br>
+        <br>
+        <label for="#tip">How much do you want to tip?</label>
+        <br>
+        <br>
+        <input id="tip" type="text">%
+        <br>
+        <br>
+        <input type="button" value="Calculate" onclick="taxCalc()"></input>
+        <p hidden>TIP AMOUNT:</p>
+        <p id="tipDisplay">TIP</p>
+        <p hidden>TOTAL:</p>
+        <p id="totalDisplay">Total</p>
+    </div>
+</body>
+</html>
