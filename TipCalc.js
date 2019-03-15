@@ -10,3 +10,7 @@ function taxCalc() {
     document.getElementById("tipDisplay").innerHTML = tipTotal;
     document.getElementById("totalDisplay").innerHTML = billTotal;
 }
+
+function connected() {
+    console.log("hello");
+}

@@ -2,30 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tip Me Bitches</title>
+    <title>Tip Me</title>
     <link rel="stylesheet" href="TipCalc.css">
     <script src="TipCalc.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
 </head>
 <body>
     <div class="container">
-        <h1>Tip Me</h1>
+        <h1>Check Calculator</h1>
         <label for="#bill">How much was your bill?</label>
         <br>
         <br>
-        $<input id="bill" type="text">
+        <span class="currencyinput">$<input id="bill" type="number" step="0.01" size="50"></span>
         <br>
         <br>
         <label for="#tip">How much do you want to tip?</label>
         <br>
         <br>
-        <input id="tip" type="text">%
+        <span class="currencyinput"><input id="bill" type="number" size="50">%</span>
         <br>
         <br>
-        <input type="button" value="Calculate" onclick="taxCalc()"></input>
-        <p hidden>TIP AMOUNT:</p>
-        <p id="tipDisplay">TIP</p>
-        <p hidden>TOTAL:</p>
-        <p id="totalDisplay">Total</p>
+        <label for="#split">Number of People?</label>
+        <br>
+        <br>
+        <span class="currencyinput"><input id="bill" type="number" size="50">%</span>
+        <br>
+        <br>
+        <input id="button" type="button" value="Calculate" onclick="connected()"></input>
+        
     </div>
 </body>
 </html>
