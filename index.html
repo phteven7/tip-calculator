@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%">
     <title>Tip Me</title>
     <link rel="stylesheet" href="TipCalc.css">
     <script src="TipCalc.js"></script>
@@ -9,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Check Calculator</h1>
+        <h1>Check <br>Calculator</h1>
         <label for="#bill">How much was your bill?</label>
         <br>
         <br>
@@ -19,17 +20,28 @@
         <label for="#tip">How much do you want to tip?</label>
         <br>
         <br>
-        <span class="currencyinput"><input id="bill" type="number" size="50">%</span>
+        <span class="currencyinput"><input id="tip" type="number" size="50">%</span>
         <br>
         <br>
         <label for="#split">Number of People?</label>
         <br>
         <br>
-        <span class="currencyinput"><input id="bill" type="number" size="50">%</span>
+        <span class="currencyinput">-<input id="split" type="number" placeholder="1"> -</span>
         <br>
         <br>
-        <input id="button" type="button" value="Calculate" onclick="connected()"></input>
-        
+        <input id="button" type="button" value="Calculate" onclick="taxCalc()"></input>
+        <table>
+            <tr>
+                    <th>Total Tip :</th> 
+                    <th>Total Bill :</th>
+                    <th>Total Per Person :</th>
+            </tr>
+            <tr>
+                <td id="totalTip"></td>
+                <td id="totalBill"></td>
+                <td id="perPerson"></td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>

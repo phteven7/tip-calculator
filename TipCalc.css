@@ -86,3 +86,19 @@ input[type="button"] {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
+
+
+
+table {
+   font-size: 1.3em;
+   /* border: 1px solid white; */
+    width: 100%;
+    table-layout: fixed;
+}
+
+th {
+    height: 50px;
+    font-weight: 300;
+    margin: 5px;
+    padding: 15px;
+}
